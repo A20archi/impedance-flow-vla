@@ -1,0 +1,605 @@
+{
+  "checkpoint": "2_libero",
+  "suite": "libero_object",
+  "hyperparameters": {
+    "suite": "libero_object",
+    "task_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "H": 16,
+    "hidden": 256,
+    "num_steps": 10,
+    "imp_dims": 6,
+    "k_max": 20.0,
+    "d_max": 18.0,
+    "zeta_max": 2.0,
+    "lr": 0.001,
+    "batch_size": 128,
+    "epochs": 100,
+    "eval_episodes": 20,
+    "max_steps": 280,
+    "exec_horizon": 8,
+    "video_task_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "out_dir": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_2_libero"
+  },
+  "total_epochs": 6000,
+  "epochs_per_arm_per_seed": 100,
+  "batch_size": 128,
+  "n_cells": 60,
+  "param_counts": {
+    "baseline_vanilla": 499248,
+    "ours_impedance": 479974
+  },
+  "aggregate": {
+    "0": {
+      "language": "pick up the alphabet soup and place it in the basket",
+      "baseline_vanilla": {
+        "success_mean": 0.3666666666666667,
+        "success_sem": 0.19051586888313612,
+        "success_per_seed": [
+          0.8,
+          0.0,
+          0.3
+        ],
+        "jerk_mean": 2.236392354220152
+      },
+      "ours_impedance": {
+        "success_mean": 0.8833333333333333,
+        "success_sem": 0.03600411499115476,
+        "success_per_seed": [
+          0.8,
+          0.95,
+          0.9
+        ],
+        "jerk_mean": 0.13864704724401236
+      }
+    },
+    "1": {
+      "language": "pick up the cream cheese and place it in the basket",
+      "baseline_vanilla": {
+        "success_mean": 0.15,
+        "success_sem": 0.12247448713915893,
+        "success_per_seed": [
+          0.0,
+          0.0,
+          0.45
+        ],
+        "jerk_mean": 0.6848908711224796
+      },
+      "ours_impedance": {
+        "success_mean": 0.31666666666666665,
+        "success_sem": 0.25855725062711327,
+        "success_per_seed": [
+          0.95,
+          0.0,
+          0.0
+        ],
+        "jerk_mean": 6.442429263020554
+      }
+    },
+    "2": {
+      "language": "pick up the salad dressing and place it in the basket",
+      "baseline_vanilla": {
+        "success_mean": 0.15,
+        "success_sem": 0.12247448713915893,
+        "success_per_seed": [
+          0.0,
+          0.0,
+          0.45
+        ],
+        "jerk_mean": 3.1657031594154734
+      },
+      "ours_impedance": {
+        "success_mean": 0.6166666666666667,
+        "success_sem": 0.2542235819699456,
+        "success_per_seed": [
+          0.0,
+          1.0,
+          0.85
+        ],
+        "jerk_mean": 1.3812473804379504
+      }
+    },
+    "3": {
+      "language": "pick up the bbq sauce and place it in the basket",
+      "baseline_vanilla": {
+        "success_mean": 0.2333333333333333,
+        "success_sem": 0.1905158688831361,
+        "success_per_seed": [
+          0.0,
+          0.0,
+          0.7
+        ],
+        "jerk_mean": 5.7798531747423105
+      },
+      "ours_impedance": {
+        "success_mean": 0.39999999999999997,
+        "success_sem": 0.23213980461973532,
+        "success_per_seed": [
+          0.95,
+          0.25,
+          0.0
+        ],
+        "jerk_mean": 1.471684786429008
+      }
+    },
+    "4": {
+      "language": "pick up the ketchup and place it in the basket",
+      "baseline_vanilla": {
+        "success_mean": 0.3833333333333333,
+        "success_sem": 0.2542235819699456,
+        "success_per_seed": [
+          0.0,
+          0.15,
+          1.0
+        ],
+        "jerk_mean": 4.2060820812980335
+      },
+      "ours_impedance": {
+        "success_mean": 0.35000000000000003,
+        "success_sem": 0.26562295750848713,
+        "success_per_seed": [
+          0.0,
+          0.05,
+          1.0
+        ],
+        "jerk_mean": 0.36201318108166264
+      }
+    },
+    "5": {
+      "language": "pick up the tomato sauce and place it in the basket",
+      "baseline_vanilla": {
+        "success_mean": 0.2833333333333333,
+        "success_sem": 0.23134069792952236,
+        "success_per_seed": [
+          0.0,
+          0.85,
+          0.0
+        ],
+        "jerk_mean": 2.005439674233397
+      },
+      "ours_impedance": {
+        "success_mean": 0.8833333333333333,
+        "success_sem": 0.03600411499115476,
+        "success_per_seed": [
+          0.8,
+          0.95,
+          0.9
+        ],
+        "jerk_mean": 0.154798094710956
+      }
+    },
+    "6": {
+      "language": "pick up the butter and place it in the basket",
+      "baseline_vanilla": {
+        "success_mean": 0.3833333333333333,
+        "success_sem": 0.2360947706763975,
+        "success_per_seed": [
+          0.95,
+          0.2,
+          0.0
+        ],
+        "jerk_mean": 0.7035474838378528
+      },
+      "ours_impedance": {
+        "success_mean": 0.6833333333333335,
+        "success_sem": 0.04906533814626583,
+        "success_per_seed": [
+          0.8,
+          0.65,
+          0.6
+        ],
+        "jerk_mean": 0.32799770658214883
+      }
+    },
+    "7": {
+      "language": "pick up the milk and place it in the basket",
+      "baseline_vanilla": {
+        "success_mean": 0.09999999999999999,
+        "success_sem": 0.06236095644623236,
+        "success_per_seed": [
+          0.0,
+          0.25,
+          0.05
+        ],
+        "jerk_mean": 2.2763099920004604
+      },
+      "ours_impedance": {
+        "success_mean": 0.16666666666666666,
+        "success_sem": 0.13608276348795434,
+        "success_per_seed": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "jerk_mean": 3.087080787246426
+      }
+    },
+    "8": {
+      "language": "pick up the chocolate pudding and place it in the basket",
+      "baseline_vanilla": {
+        "success_mean": 0.4166666666666667,
+        "success_sem": 0.17051121392469784,
+        "success_per_seed": [
+          0.65,
+          0.0,
+          0.6
+        ],
+        "jerk_mean": 2.3447537843137978
+      },
+      "ours_impedance": {
+        "success_mean": 0.3333333333333333,
+        "success_sem": 0.2721655269759087,
+        "success_per_seed": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "jerk_mean": 3.756342415263255
+      }
+    },
+    "9": {
+      "language": "pick up the orange juice and place it in the basket",
+      "baseline_vanilla": {
+        "success_mean": 0.35000000000000003,
+        "success_sem": 0.15456030825826172,
+        "success_per_seed": [
+          0.4,
+          0.0,
+          0.65
+        ],
+        "jerk_mean": 4.346677316663166
+      },
+      "ours_impedance": {
+        "success_mean": 0.18333333333333335,
+        "success_sem": 0.12981468272831026,
+        "success_per_seed": [
+          0.5,
+          0.0,
+          0.05
+        ],
+        "jerk_mean": 2.366380463850995
+      }
+    }
+  },
+  "cells": {
+    "0/baseline_vanilla/0": {
+      "success": 0.8,
+      "jerk": 1.0298469364643097,
+      "language": "pick up the alphabet soup and place it in the basket"
+    },
+    "0/baseline_vanilla/1": {
+      "success": 0.0,
+      "jerk": 4.783283805847168,
+      "language": "pick up the alphabet soup and place it in the basket"
+    },
+    "0/baseline_vanilla/2": {
+      "success": 0.3,
+      "jerk": 0.896046320348978,
+      "language": "pick up the alphabet soup and place it in the basket"
+    },
+    "0/ours_impedance/0": {
+      "success": 0.8,
+      "jerk": 0.16597791127860545,
+      "language": "pick up the alphabet soup and place it in the basket"
+    },
+    "0/ours_impedance/1": {
+      "success": 0.95,
+      "jerk": 0.09679397288709879,
+      "language": "pick up the alphabet soup and place it in the basket"
+    },
+    "0/ours_impedance/2": {
+      "success": 0.9,
+      "jerk": 0.15316925756633282,
+      "language": "pick up the alphabet soup and place it in the basket"
+    },
+    "1/baseline_vanilla/0": {
+      "success": 0.0,
+      "jerk": 0.8407891765236855,
+      "language": "pick up the cream cheese and place it in the basket"
+    },
+    "1/baseline_vanilla/1": {
+      "success": 0.0,
+      "jerk": 0.3119493186473846,
+      "language": "pick up the cream cheese and place it in the basket"
+    },
+    "1/baseline_vanilla/2": {
+      "success": 0.45,
+      "jerk": 0.9019341181963683,
+      "language": "pick up the cream cheese and place it in the basket"
+    },
+    "1/ours_impedance/0": {
+      "success": 0.95,
+      "jerk": 0.13749711103737355,
+      "language": "pick up the cream cheese and place it in the basket"
+    },
+    "1/ours_impedance/1": {
+      "success": 0.0,
+      "jerk": 7.4906096935272215,
+      "language": "pick up the cream cheese and place it in the basket"
+    },
+    "1/ours_impedance/2": {
+      "success": 0.0,
+      "jerk": 11.69918098449707,
+      "language": "pick up the cream cheese and place it in the basket"
+    },
+    "2/baseline_vanilla/0": {
+      "success": 0.0,
+      "jerk": 8.702658796310425,
+      "language": "pick up the salad dressing and place it in the basket"
+    },
+    "2/baseline_vanilla/1": {
+      "success": 0.0,
+      "jerk": 0.6785806700587272,
+      "language": "pick up the salad dressing and place it in the basket"
+    },
+    "2/baseline_vanilla/2": {
+      "success": 0.45,
+      "jerk": 0.11587001187726856,
+      "language": "pick up the salad dressing and place it in the basket"
+    },
+    "2/ours_impedance/0": {
+      "success": 0.0,
+      "jerk": 3.8459183812141418,
+      "language": "pick up the salad dressing and place it in the basket"
+    },
+    "2/ours_impedance/1": {
+      "success": 1.0,
+      "jerk": 0.08161299210041761,
+      "language": "pick up the salad dressing and place it in the basket"
+    },
+    "2/ours_impedance/2": {
+      "success": 0.85,
+      "jerk": 0.21621076799929143,
+      "language": "pick up the salad dressing and place it in the basket"
+    },
+    "3/baseline_vanilla/0": {
+      "success": 0.0,
+      "jerk": 16.681231641769408,
+      "language": "pick up the bbq sauce and place it in the basket"
+    },
+    "3/baseline_vanilla/1": {
+      "success": 0.0,
+      "jerk": 0.3513737216591835,
+      "language": "pick up the bbq sauce and place it in the basket"
+    },
+    "3/baseline_vanilla/2": {
+      "success": 0.7,
+      "jerk": 0.30695416079834104,
+      "language": "pick up the bbq sauce and place it in the basket"
+    },
+    "3/ours_impedance/0": {
+      "success": 0.95,
+      "jerk": 0.1453901629894972,
+      "language": "pick up the bbq sauce and place it in the basket"
+    },
+    "3/ours_impedance/1": {
+      "success": 0.25,
+      "jerk": 0.792355028912425,
+      "language": "pick up the bbq sauce and place it in the basket"
+    },
+    "3/ours_impedance/2": {
+      "success": 0.0,
+      "jerk": 3.4773091673851013,
+      "language": "pick up the bbq sauce and place it in the basket"
+    },
+    "4/baseline_vanilla/0": {
+      "success": 0.0,
+      "jerk": 12.365047168731689,
+      "language": "pick up the ketchup and place it in the basket"
+    },
+    "4/baseline_vanilla/1": {
+      "success": 0.15,
+      "jerk": 0.18188489377498626,
+      "language": "pick up the ketchup and place it in the basket"
+    },
+    "4/baseline_vanilla/2": {
+      "success": 1.0,
+      "jerk": 0.07131418138742447,
+      "language": "pick up the ketchup and place it in the basket"
+    },
+    "4/ours_impedance/0": {
+      "success": 0.0,
+      "jerk": 0.6920405581593514,
+      "language": "pick up the ketchup and place it in the basket"
+    },
+    "4/ours_impedance/1": {
+      "success": 0.05,
+      "jerk": 0.34565923549234867,
+      "language": "pick up the ketchup and place it in the basket"
+    },
+    "4/ours_impedance/2": {
+      "success": 1.0,
+      "jerk": 0.048339749593287705,
+      "language": "pick up the ketchup and place it in the basket"
+    },
+    "5/baseline_vanilla/0": {
+      "success": 0.0,
+      "jerk": 4.967135632038117,
+      "language": "pick up the tomato sauce and place it in the basket"
+    },
+    "5/baseline_vanilla/1": {
+      "success": 0.85,
+      "jerk": 0.11896451823413372,
+      "language": "pick up the tomato sauce and place it in the basket"
+    },
+    "5/baseline_vanilla/2": {
+      "success": 0.0,
+      "jerk": 0.9302188724279403,
+      "language": "pick up the tomato sauce and place it in the basket"
+    },
+    "5/ours_impedance/0": {
+      "success": 0.8,
+      "jerk": 0.27327541932463645,
+      "language": "pick up the tomato sauce and place it in the basket"
+    },
+    "5/ours_impedance/1": {
+      "success": 0.95,
+      "jerk": 0.10852654743939638,
+      "language": "pick up the tomato sauce and place it in the basket"
+    },
+    "5/ours_impedance/2": {
+      "success": 0.9,
+      "jerk": 0.08259231736883521,
+      "language": "pick up the tomato sauce and place it in the basket"
+    },
+    "6/baseline_vanilla/0": {
+      "success": 0.95,
+      "jerk": 0.0652420417405665,
+      "language": "pick up the butter and place it in the basket"
+    },
+    "6/baseline_vanilla/1": {
+      "success": 0.2,
+      "jerk": 0.4089665669947863,
+      "language": "pick up the butter and place it in the basket"
+    },
+    "6/baseline_vanilla/2": {
+      "success": 0.0,
+      "jerk": 1.636433842778206,
+      "language": "pick up the butter and place it in the basket"
+    },
+    "6/ours_impedance/0": {
+      "success": 0.8,
+      "jerk": 0.16194958481937646,
+      "language": "pick up the butter and place it in the basket"
+    },
+    "6/ours_impedance/1": {
+      "success": 0.65,
+      "jerk": 0.3231172237545252,
+      "language": "pick up the butter and place it in the basket"
+    },
+    "6/ours_impedance/2": {
+      "success": 0.6,
+      "jerk": 0.49892631117254493,
+      "language": "pick up the butter and place it in the basket"
+    },
+    "7/baseline_vanilla/0": {
+      "success": 0.0,
+      "jerk": 1.7941227316856385,
+      "language": "pick up the milk and place it in the basket"
+    },
+    "7/baseline_vanilla/1": {
+      "success": 0.25,
+      "jerk": 0.1959781561046839,
+      "language": "pick up the milk and place it in the basket"
+    },
+    "7/baseline_vanilla/2": {
+      "success": 0.05,
+      "jerk": 4.838829088211059,
+      "language": "pick up the milk and place it in the basket"
+    },
+    "7/ours_impedance/0": {
+      "success": 0.5,
+      "jerk": 0.19938630647957326,
+      "language": "pick up the milk and place it in the basket"
+    },
+    "7/ours_impedance/1": {
+      "success": 0.0,
+      "jerk": 5.978090429306031,
+      "language": "pick up the milk and place it in the basket"
+    },
+    "7/ours_impedance/2": {
+      "success": 0.0,
+      "jerk": 3.0837656259536743,
+      "language": "pick up the milk and place it in the basket"
+    },
+    "8/baseline_vanilla/0": {
+      "success": 0.65,
+      "jerk": 0.6411679910495878,
+      "language": "pick up the chocolate pudding and place it in the basket"
+    },
+    "8/baseline_vanilla/1": {
+      "success": 0.0,
+      "jerk": 6.1399970054626465,
+      "language": "pick up the chocolate pudding and place it in the basket"
+    },
+    "8/baseline_vanilla/2": {
+      "success": 0.6,
+      "jerk": 0.2530963564291596,
+      "language": "pick up the chocolate pudding and place it in the basket"
+    },
+    "8/ours_impedance/0": {
+      "success": 1.0,
+      "jerk": 0.05930167511105537,
+      "language": "pick up the chocolate pudding and place it in the basket"
+    },
+    "8/ours_impedance/1": {
+      "success": 0.0,
+      "jerk": 8.564411640167236,
+      "language": "pick up the chocolate pudding and place it in the basket"
+    },
+    "8/ours_impedance/2": {
+      "success": 0.0,
+      "jerk": 2.645313930511475,
+      "language": "pick up the chocolate pudding and place it in the basket"
+    },
+    "9/baseline_vanilla/0": {
+      "success": 0.4,
+      "jerk": 3.6153987288475036,
+      "language": "pick up the orange juice and place it in the basket"
+    },
+    "9/baseline_vanilla/1": {
+      "success": 0.0,
+      "jerk": 9.257940673828125,
+      "language": "pick up the orange juice and place it in the basket"
+    },
+    "9/baseline_vanilla/2": {
+      "success": 0.65,
+      "jerk": 0.166692547313869,
+      "language": "pick up the orange juice and place it in the basket"
+    },
+    "9/ours_impedance/0": {
+      "success": 0.5,
+      "jerk": 0.315401148237288,
+      "language": "pick up the orange juice and place it in the basket"
+    },
+    "9/ours_impedance/1": {
+      "success": 0.0,
+      "jerk": 3.0684081435203554,
+      "language": "pick up the orange juice and place it in the basket"
+    },
+    "9/ours_impedance/2": {
+      "success": 0.05,
+      "jerk": 3.7153320997953414,
+      "language": "pick up the orange juice and place it in the basket"
+    }
+  },
+  "videos": {
+    "0": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_2_libero/videos/task0_pick_up_the_alphabet_soup_and_place_it_in_the_basket_baseline_vs_ours.mp4",
+    "1": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_2_libero/videos/task1_pick_up_the_cream_cheese_and_place_it_in_the_basket_baseline_vs_ours.mp4",
+    "2": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_2_libero/videos/task2_pick_up_the_salad_dressing_and_place_it_in_the_basket_baseline_vs_ours.mp4",
+    "3": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_2_libero/videos/task3_pick_up_the_bbq_sauce_and_place_it_in_the_basket_baseline_vs_ours.mp4",
+    "4": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_2_libero/videos/task4_pick_up_the_ketchup_and_place_it_in_the_basket_baseline_vs_ours.mp4",
+    "5": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_2_libero/videos/task5_pick_up_the_tomato_sauce_and_place_it_in_the_basket_baseline_vs_ours.mp4",
+    "6": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_2_libero/videos/task6_pick_up_the_butter_and_place_it_in_the_basket_baseline_vs_ours.mp4",
+    "7": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_2_libero/videos/task7_pick_up_the_milk_and_place_it_in_the_basket_baseline_vs_ours.mp4",
+    "8": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_2_libero/videos/task8_pick_up_the_chocolate_pudding_and_place_it_in_the_basket_baseline_vs_ours.mp4",
+    "9": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_2_libero/videos/task9_pick_up_the_orange_juice_and_place_it_in_the_basket_baseline_vs_ours.mp4"
+  },
+  "wall_minutes_last_chunk": 239.77
+}

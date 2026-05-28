@@ -1,0 +1,592 @@
+{
+  "checkpoint": "1_mt10",
+  "quick": false,
+  "hyperparameters": {
+    "tasks": [
+      "reach-v3",
+      "push-v3",
+      "pick-place-v3",
+      "door-open-v3",
+      "drawer-open-v3",
+      "drawer-close-v3",
+      "button-press-topdown-v3",
+      "peg-insert-side-v3",
+      "window-open-v3",
+      "window-close-v3"
+    ],
+    "H": 16,
+    "hidden": 256,
+    "num_steps": 10,
+    "k_max": 20.0,
+    "d_max": 18.0,
+    "zeta_max": 2.0,
+    "lr": 0.001,
+    "batch_size": 256,
+    "epochs": 300,
+    "n_demos_per_task": 50,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "eval_rollouts_per_task": 10,
+    "eval_max_steps": 200,
+    "exec_horizon": 4,
+    "video_tasks": [
+      "reach-v3",
+      "push-v3",
+      "pick-place-v3",
+      "door-open-v3",
+      "drawer-open-v3",
+      "drawer-close-v3",
+      "button-press-topdown-v3",
+      "peg-insert-side-v3",
+      "window-open-v3",
+      "window-close-v3"
+    ],
+    "video_max_steps": 150,
+    "out_dir": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_1_mt10"
+  },
+  "total_epochs": 1800,
+  "epochs_per_arm_per_seed": 300,
+  "param_counts": {
+    "baseline_vanilla": 399904,
+    "ours_impedance": 410507
+  },
+  "aggregate": {
+    "reach-v3": {
+      "baseline_vanilla": {
+        "success_mean": 0.8333333333333334,
+        "success_sem": 0.027216552697590865,
+        "success_per_seed": [
+          0.8,
+          0.9,
+          0.8
+        ],
+        "jerk_mean": 0.00815248330278943
+      },
+      "ours_impedance": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.00826842406919847
+      }
+    },
+    "push-v3": {
+      "baseline_vanilla": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.05179740811387698
+      },
+      "ours_impedance": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.05359741809467475
+      }
+    },
+    "pick-place-v3": {
+      "baseline_vanilla": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.07605435537795226
+      },
+      "ours_impedance": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.05881142057478428
+      }
+    },
+    "door-open-v3": {
+      "baseline_vanilla": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.12047064416110516
+      },
+      "ours_impedance": {
+        "success_mean": 0.9666666666666667,
+        "success_sem": 0.027216552697590865,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          0.9
+        ],
+        "jerk_mean": 0.3229560653368632
+      }
+    },
+    "drawer-open-v3": {
+      "baseline_vanilla": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.032795367700358236
+      },
+      "ours_impedance": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.03419994084785382
+      }
+    },
+    "drawer-close-v3": {
+      "baseline_vanilla": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.06405025012791157
+      },
+      "ours_impedance": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.047604086746772134
+      }
+    },
+    "button-press-topdown-v3": {
+      "baseline_vanilla": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.022258744792391857
+      },
+      "ours_impedance": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.020347355399280787
+      }
+    },
+    "peg-insert-side-v3": {
+      "baseline_vanilla": {
+        "success_mean": 0.7666666666666667,
+        "success_sem": 0.07200822998230959,
+        "success_per_seed": [
+          0.8,
+          0.9,
+          0.6
+        ],
+        "jerk_mean": 0.15639634865025678
+      },
+      "ours_impedance": {
+        "success_mean": 0.7999999999999999,
+        "success_sem": 0.08164965809277262,
+        "success_per_seed": [
+          0.6,
+          0.9,
+          0.9
+        ],
+        "jerk_mean": 0.17700731419026852
+      }
+    },
+    "window-open-v3": {
+      "baseline_vanilla": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.03560940337677796
+      },
+      "ours_impedance": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.030677861596147216
+      }
+    },
+    "window-close-v3": {
+      "baseline_vanilla": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.024734935412804287
+      },
+      "ours_impedance": {
+        "success_mean": 1.0,
+        "success_sem": 0.0,
+        "success_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "jerk_mean": 0.01926679400106271
+      }
+    }
+  },
+  "eval_cells": {
+    "baseline_vanilla/0/reach-v3": {
+      "success": 0.8,
+      "jerk": 0.009054492611903697,
+      "peakF": 260.50329752169404
+    },
+    "baseline_vanilla/0/push-v3": {
+      "success": 1.0,
+      "jerk": 0.0515003327280283,
+      "peakF": 796.0775326205818
+    },
+    "baseline_vanilla/0/pick-place-v3": {
+      "success": 1.0,
+      "jerk": 0.0819787047803402,
+      "peakF": 1095.2884571566833
+    },
+    "baseline_vanilla/0/door-open-v3": {
+      "success": 1.0,
+      "jerk": 0.12928390875458717,
+      "peakF": 854.3504799518385
+    },
+    "baseline_vanilla/0/drawer-open-v3": {
+      "success": 1.0,
+      "jerk": 0.034146325662732124,
+      "peakF": 148.68677112177886
+    },
+    "baseline_vanilla/0/drawer-close-v3": {
+      "success": 1.0,
+      "jerk": 0.07126436531543731,
+      "peakF": 119.64602427734705
+    },
+    "baseline_vanilla/0/button-press-topdown-v3": {
+      "success": 1.0,
+      "jerk": 0.022142269276082517,
+      "peakF": 649.5928179804848
+    },
+    "baseline_vanilla/0/peg-insert-side-v3": {
+      "success": 0.8,
+      "jerk": 0.14768226779997348,
+      "peakF": 380.2056545387181
+    },
+    "baseline_vanilla/0/window-open-v3": {
+      "success": 1.0,
+      "jerk": 0.04201974049210548,
+      "peakF": 131.27704667479304
+    },
+    "baseline_vanilla/0/window-close-v3": {
+      "success": 1.0,
+      "jerk": 0.025538149662315844,
+      "peakF": 203.21937023416967
+    },
+    "baseline_vanilla/1/reach-v3": {
+      "success": 0.9,
+      "jerk": 0.005480529938358814,
+      "peakF": 282.3096660399602
+    },
+    "baseline_vanilla/1/push-v3": {
+      "success": 1.0,
+      "jerk": 0.053063468635082246,
+      "peakF": 923.4777755869229
+    },
+    "baseline_vanilla/1/pick-place-v3": {
+      "success": 1.0,
+      "jerk": 0.07396547272801399,
+      "peakF": 1158.2477657289242
+    },
+    "baseline_vanilla/1/door-open-v3": {
+      "success": 1.0,
+      "jerk": 0.11218532733619213,
+      "peakF": 1111.2158290374587
+    },
+    "baseline_vanilla/1/drawer-open-v3": {
+      "success": 1.0,
+      "jerk": 0.03325976468622684,
+      "peakF": 147.31475077197263
+    },
+    "baseline_vanilla/1/drawer-close-v3": {
+      "success": 1.0,
+      "jerk": 0.0665921300649643,
+      "peakF": 114.71858591097414
+    },
+    "baseline_vanilla/1/button-press-topdown-v3": {
+      "success": 1.0,
+      "jerk": 0.019412937480956315,
+      "peakF": 585.9783382964082
+    },
+    "baseline_vanilla/1/peg-insert-side-v3": {
+      "success": 0.9,
+      "jerk": 0.15396874099969865,
+      "peakF": 382.3345155181454
+    },
+    "baseline_vanilla/1/window-open-v3": {
+      "success": 1.0,
+      "jerk": 0.023133286274969578,
+      "peakF": 133.77497246338444
+    },
+    "baseline_vanilla/1/window-close-v3": {
+      "success": 1.0,
+      "jerk": 0.025408946350216864,
+      "peakF": 200.88625155005533
+    },
+    "baseline_vanilla/2/reach-v3": {
+      "success": 0.8,
+      "jerk": 0.009922427358105779,
+      "peakF": 248.8716581670526
+    },
+    "baseline_vanilla/2/push-v3": {
+      "success": 1.0,
+      "jerk": 0.050828422978520395,
+      "peakF": 877.0286017561828
+    },
+    "baseline_vanilla/2/pick-place-v3": {
+      "success": 1.0,
+      "jerk": 0.07221888862550259,
+      "peakF": 1176.6520767472139
+    },
+    "baseline_vanilla/2/door-open-v3": {
+      "success": 1.0,
+      "jerk": 0.11994269639253616,
+      "peakF": 1234.6318648494562
+    },
+    "baseline_vanilla/2/drawer-open-v3": {
+      "success": 1.0,
+      "jerk": 0.030980012752115725,
+      "peakF": 146.2440402758963
+    },
+    "baseline_vanilla/2/drawer-close-v3": {
+      "success": 1.0,
+      "jerk": 0.05429425500333309,
+      "peakF": 116.78386002882262
+    },
+    "baseline_vanilla/2/button-press-topdown-v3": {
+      "success": 1.0,
+      "jerk": 0.025221027620136737,
+      "peakF": 617.9382578403678
+    },
+    "baseline_vanilla/2/peg-insert-side-v3": {
+      "success": 0.6,
+      "jerk": 0.16753803715109825,
+      "peakF": 447.07292879600254
+    },
+    "baseline_vanilla/2/window-open-v3": {
+      "success": 1.0,
+      "jerk": 0.04167518336325884,
+      "peakF": 120.83131513226765
+    },
+    "baseline_vanilla/2/window-close-v3": {
+      "success": 1.0,
+      "jerk": 0.023257710225880145,
+      "peakF": 200.43625106863337
+    },
+    "ours_impedance/0/reach-v3": {
+      "success": 1.0,
+      "jerk": 0.008232644107192755,
+      "peakF": 277.1641326415644
+    },
+    "ours_impedance/0/push-v3": {
+      "success": 1.0,
+      "jerk": 0.056183091923594476,
+      "peakF": 851.8467996678025
+    },
+    "ours_impedance/0/pick-place-v3": {
+      "success": 1.0,
+      "jerk": 0.06274527348577977,
+      "peakF": 1179.3024466608272
+    },
+    "ours_impedance/0/door-open-v3": {
+      "success": 1.0,
+      "jerk": 0.28837930560112,
+      "peakF": 1148.4239462590963
+    },
+    "ours_impedance/0/drawer-open-v3": {
+      "success": 1.0,
+      "jerk": 0.02870711013674736,
+      "peakF": 148.75999153486572
+    },
+    "ours_impedance/0/drawer-close-v3": {
+      "success": 1.0,
+      "jerk": 0.057086586207151416,
+      "peakF": 116.60776481533674
+    },
+    "ours_impedance/0/button-press-topdown-v3": {
+      "success": 1.0,
+      "jerk": 0.0195006400346756,
+      "peakF": 646.8080750098081
+    },
+    "ours_impedance/0/peg-insert-side-v3": {
+      "success": 0.6,
+      "jerk": 0.18885799758136274,
+      "peakF": 376.60852784059637
+    },
+    "ours_impedance/0/window-open-v3": {
+      "success": 1.0,
+      "jerk": 0.036306378431618214,
+      "peakF": 129.94665331550476
+    },
+    "ours_impedance/0/window-close-v3": {
+      "success": 1.0,
+      "jerk": 0.018316109385341405,
+      "peakF": 201.19561291390306
+    },
+    "ours_impedance/1/reach-v3": {
+      "success": 1.0,
+      "jerk": 0.009025751985609532,
+      "peakF": 267.97728473623977
+    },
+    "ours_impedance/1/push-v3": {
+      "success": 1.0,
+      "jerk": 0.056508222967386244,
+      "peakF": 918.8673524383785
+    },
+    "ours_impedance/1/pick-place-v3": {
+      "success": 1.0,
+      "jerk": 0.05495650693774223,
+      "peakF": 1304.2385424609622
+    },
+    "ours_impedance/1/door-open-v3": {
+      "success": 1.0,
+      "jerk": 0.21135153770446777,
+      "peakF": 830.2108202714182
+    },
+    "ours_impedance/1/drawer-open-v3": {
+      "success": 1.0,
+      "jerk": 0.03621433712542057,
+      "peakF": 148.55841400421073
+    },
+    "ours_impedance/1/drawer-close-v3": {
+      "success": 1.0,
+      "jerk": 0.038080469518899915,
+      "peakF": 117.24796551046953
+    },
+    "ours_impedance/1/button-press-topdown-v3": {
+      "success": 1.0,
+      "jerk": 0.019964278396219014,
+      "peakF": 591.653790181614
+    },
+    "ours_impedance/1/peg-insert-side-v3": {
+      "success": 0.9,
+      "jerk": 0.1970000758767128,
+      "peakF": 401.3124341667385
+    },
+    "ours_impedance/1/window-open-v3": {
+      "success": 1.0,
+      "jerk": 0.025131970457732678,
+      "peakF": 138.93604237190502
+    },
+    "ours_impedance/1/window-close-v3": {
+      "success": 1.0,
+      "jerk": 0.022050807438790797,
+      "peakF": 208.30941061772347
+    },
+    "ours_impedance/2/reach-v3": {
+      "success": 1.0,
+      "jerk": 0.007546876114793122,
+      "peakF": 234.88625831885628
+    },
+    "ours_impedance/2/push-v3": {
+      "success": 1.0,
+      "jerk": 0.04810093939304352,
+      "peakF": 899.0138736965795
+    },
+    "ours_impedance/2/pick-place-v3": {
+      "success": 1.0,
+      "jerk": 0.05873248130083084,
+      "peakF": 1173.9636782491823
+    },
+    "ours_impedance/2/door-open-v3": {
+      "success": 0.9,
+      "jerk": 0.46913735270500184,
+      "peakF": 1341.5081904322174
+    },
+    "ours_impedance/2/drawer-open-v3": {
+      "success": 1.0,
+      "jerk": 0.03767837528139353,
+      "peakF": 150.31141798271324
+    },
+    "ours_impedance/2/drawer-close-v3": {
+      "success": 1.0,
+      "jerk": 0.04764520451426506,
+      "peakF": 114.69670392695889
+    },
+    "ours_impedance/2/button-press-topdown-v3": {
+      "success": 1.0,
+      "jerk": 0.021577147766947746,
+      "peakF": 621.283874869912
+    },
+    "ours_impedance/2/peg-insert-side-v3": {
+      "success": 0.9,
+      "jerk": 0.14516386911273002,
+      "peakF": 409.39534159375944
+    },
+    "ours_impedance/2/window-open-v3": {
+      "success": 1.0,
+      "jerk": 0.030595235899090766,
+      "peakF": 120.04192166509543
+    },
+    "ours_impedance/2/window-close-v3": {
+      "success": 1.0,
+      "jerk": 0.01743346517905593,
+      "peakF": 199.12226583748998
+    }
+  },
+  "videos": {
+    "reach-v3": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_1_mt10/videos/reach-v3_baseline_vs_ours.mp4",
+    "push-v3": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_1_mt10/videos/push-v3_baseline_vs_ours.mp4",
+    "pick-place-v3": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_1_mt10/videos/pick-place-v3_baseline_vs_ours.mp4",
+    "door-open-v3": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_1_mt10/videos/door-open-v3_baseline_vs_ours.mp4",
+    "drawer-open-v3": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_1_mt10/videos/drawer-open-v3_baseline_vs_ours.mp4",
+    "drawer-close-v3": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_1_mt10/videos/drawer-close-v3_baseline_vs_ours.mp4",
+    "button-press-topdown-v3": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_1_mt10/videos/button-press-topdown-v3_baseline_vs_ours.mp4",
+    "peg-insert-side-v3": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_1_mt10/videos/peg-insert-side-v3_baseline_vs_ours.mp4",
+    "window-open-v3": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_1_mt10/videos/window-open-v3_baseline_vs_ours.mp4",
+    "window-close-v3": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_1_mt10/videos/window-close-v3_baseline_vs_ours.mp4"
+  }
+}

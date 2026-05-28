@@ -1,0 +1,46 @@
+{
+  "suite": "libero_object",
+  "task_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "H": 16,
+  "hidden": 256,
+  "num_steps": 10,
+  "imp_dims": 6,
+  "k_max": 20.0,
+  "d_max": 18.0,
+  "zeta_max": 2.0,
+  "lr": 0.001,
+  "batch_size": 128,
+  "epochs": 100,
+  "eval_episodes": 20,
+  "max_steps": 280,
+  "exec_horizon": 8,
+  "video_task_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "out_dir": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_2_libero"
+}

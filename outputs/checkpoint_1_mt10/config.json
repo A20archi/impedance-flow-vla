@@ -1,0 +1,46 @@
+{
+  "tasks": [
+    "reach-v3",
+    "push-v3",
+    "pick-place-v3",
+    "door-open-v3",
+    "drawer-open-v3",
+    "drawer-close-v3",
+    "button-press-topdown-v3",
+    "peg-insert-side-v3",
+    "window-open-v3",
+    "window-close-v3"
+  ],
+  "H": 16,
+  "hidden": 256,
+  "num_steps": 10,
+  "k_max": 20.0,
+  "d_max": 18.0,
+  "zeta_max": 2.0,
+  "lr": 0.001,
+  "batch_size": 256,
+  "epochs": 300,
+  "n_demos_per_task": 50,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "eval_rollouts_per_task": 10,
+  "eval_max_steps": 200,
+  "exec_horizon": 4,
+  "video_tasks": [
+    "reach-v3",
+    "push-v3",
+    "pick-place-v3",
+    "door-open-v3",
+    "drawer-open-v3",
+    "drawer-close-v3",
+    "button-press-topdown-v3",
+    "peg-insert-side-v3",
+    "window-open-v3",
+    "window-close-v3"
+  ],
+  "video_max_steps": 150,
+  "out_dir": "/home/user/Desktop/Saptarshi/impedance_flow_vla/outputs/checkpoint_1_mt10"
+}
