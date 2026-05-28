@@ -13,4 +13,5 @@ figs/pptx_media/
 # Scratch
 out/
 *.log
+*.stdout
 .DS_Store
