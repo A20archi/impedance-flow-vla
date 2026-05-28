@@ -41,9 +41,9 @@ def matched_vanilla_hidden(cond_dim, H, target_params):
     return best[0]
 
 
-def train(mode, cond_dim, H, X, Y, xm, xs, ym, ys, hidden, epochs, seed, bs=256, lr=1e-3):
+def train(mode, cond_dim, H, X, Y, xm, xs, ym, ys, hidden, epochs, seed, bs=256, lr=1e-3, num_steps=10):
     torch.manual_seed(seed); np.random.seed(seed)
-    pol = CompactFlowPolicy(cond_dim, 4, H, hidden=hidden, mode=mode).to(DEV)
+    pol = CompactFlowPolicy(cond_dim, 4, H, hidden=hidden, mode=mode, num_steps=num_steps).to(DEV)
     opt = torch.optim.Adam(pol.parameters(), lr=lr)
     Xn = torch.tensor((X - xm) / xs, device=DEV)
     Yn = torch.tensor((Y - ym) / ys, device=DEV)
