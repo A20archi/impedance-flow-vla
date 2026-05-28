@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Regenerable data (see gate/gen_demos.py)
+gate_data/
+
+# Build artifacts from the pptx assembly
+figs/pptx_media/
+
+# Scratch
+out/
+*.log
+.DS_Store
